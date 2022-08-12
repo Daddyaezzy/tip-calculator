@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cal.css">
+    </head>
+    
+    <body>
+    <main id="main">
+        <h1>Tip Calculator</h1>
+        <section>
+            <div class="bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Your Bill" name="" id="yourBill">
+            </div>
+            <div>
+                <div class="tip">
+                    <label for="tipInput">Select Tip</label>
+                    <span id="tipPercent">0%</span>
+                </div>
+                <input type="range" value="0" name="" id="tipInput" class="range">
+            </div>
+            <div class="tip">
+                <span>Tip</span>
+                <span id="tipValue" >$0</span>
+            </div>
+            <hr>
+            <div class="tip total">
+                <span>Total</span>
+                <span id="tipTotal">$0</span>
+            </div>
+        </section>
+        <section class="tipper">
+            <div>
+                <div class="tip">
+                    <label for="tipSplit">Split</label>
+                    <span id="tipPerson">1 person</span>
+                </div>
+                <input type="range" min="1" max="10" value="1" id="tipSplit" class="range">
+            </div>
+            <div class="tip">
+                <span>Bill each</span>
+                <span id="billEach">$0</span>
+            </div>
+            <div class="tip">
+                <span>Tip each</span>
+                <span id="tipEach">$0</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/cal.js"></script>
+</body>
+</html>
